@@ -8,12 +8,13 @@ and not a class to avoid multiple connections
 
 import MySQLdb as ms
 import time
+from os import getenv
 
 _connect = None
 _cursor = None
 _name = None
 
-def connect(db,user='root',passwd='blahblah',conf=None):
+def connect(db,user='root',passwd=getenv('INVALIDPASSWD'),conf=None):
   global _connect, _cursor, _name
   if conf:
     conf_params = {'host':'localhost','read_default_file':conf,'db':db} 
