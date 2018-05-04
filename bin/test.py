@@ -19,9 +19,7 @@
 #   else:
 #     print 'timed out!'
 
-import mymysql
-import invalidation
-
+from li import * 
 
 # first make some dummy requests...
 mymysql.connect(db='testdb')

@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
-import mymysql
-import argparse
+from li import * 
 from os import path
 
 parser = argparse.ArgumentParser(description='request the invalidation of files')

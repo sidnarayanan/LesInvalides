@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
-import mymysql
-import argparse
+from li import *
 from os import path
 
 mymysql.connect(db='testdb')

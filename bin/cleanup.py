@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
-import mymysql
-import invalidation
+from li import * 
 
 mymysql.connect(db='testdb')
 mymysql.set_table()
